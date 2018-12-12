@@ -77,8 +77,8 @@ def train():
     sess = tf.Session()
     sess.run(tf.global_variables_initializer()) # 每次不写就会报错
 
-    if exists('./ckpt'):
-        ckpt = tf.train.get_checkpoint_state('ckpt')
+    if exists('ckpt'):
+        ckpt = tf.train.get_checkpoint_state('./ckpt')
         saver.restore(sess, ckpt.model_checkpoint_path)
         print('Restore from', ckpt.model_checkpoint_path)
 
