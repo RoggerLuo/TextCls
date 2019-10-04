@@ -1,6 +1,6 @@
 # attention encode and filter
 在重复一个字的案例中  
-比如在区别 “这是圆的分类” 与 “这是圆圆的分类”这两句的任务中，  
+比如在区别 “这是测试的分类” 与 “这不是测试的分类”这两句的任务中，  
 
 filter的attention的softmax结果是 98%\96.9%  
 
